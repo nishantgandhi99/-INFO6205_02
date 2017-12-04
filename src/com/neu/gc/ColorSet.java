@@ -6,6 +6,7 @@ import java.util.stream.IntStream;
 /**
  * Created by Abi on 12/3/17.
  */
+
 public class ColorSet {
 
     int[] colorset;
@@ -17,15 +18,16 @@ public class ColorSet {
 
     /**
      * Populate the node with random color
-     * TODO : Change method signature to accept user inputted value
+     * Number of color is user inputted
+     *
      **/
-    public void generateSet() {
+    public void generateSet(int numberOfColor) {
 
         Random random = new Random();
 
         for (int i = 0; i < colorset.length; i++) {
 
-            colorset[i] = random.nextInt(3) + 1;
+            colorset[i] = random.nextInt(numberOfColor) + 1;
         }
 
     }

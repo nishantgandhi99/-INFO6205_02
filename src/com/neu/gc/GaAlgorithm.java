@@ -20,7 +20,7 @@ public class GaAlgorithm {
      **/
     public static Population evolvePopulation(Population pop) {
 
-        Population newPopulation = new Population(pop.getSize(), false);
+        Population newPopulation = new Population(pop.getSize(), false, 0);
 
         int eliteOffset = 0;
 
@@ -99,7 +99,7 @@ public class GaAlgorithm {
 
     //Randomly select pool of candidates and returns fittest among them.
     public static ColorSet tournamentSelection(Population pop) {
-        Population selectionCandidate = new Population(tournamentSize, false);
+        Population selectionCandidate = new Population(tournamentSize, false, 0);
 
         for (int i = 0; i < tournamentSize; i++) {
             int randomID = (int) (Math.random() * (pop.getSize()));

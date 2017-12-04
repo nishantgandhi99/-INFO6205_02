@@ -8,6 +8,8 @@ public class GraphGenerator {
 
     /**
      * A graph can be represented in form of adjacency matrix.
+     * An undirected graph is required
+     *
      */
     static int[][] graph = new int[10][10];
     static int node = graph.length;

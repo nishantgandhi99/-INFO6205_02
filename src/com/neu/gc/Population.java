@@ -7,14 +7,14 @@ public class Population {
 
     ColorSet[] colorset;
 
-    public Population(int populationSize, Boolean flag) {
+    public Population(int populationSize, Boolean flag, int numberOfColor) {
 
         colorset = new ColorSet[populationSize];
 
         if (flag) {
             for (int i = 0; i < populationSize; i++) {
                 ColorSet cs = new ColorSet();
-                cs.generateSet();
+                cs.generateSet(numberOfColor);
                 setColorset(i, cs);
             }
         }
