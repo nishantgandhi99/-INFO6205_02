@@ -1,8 +1,6 @@
 package com.neu.gc;
 
-/**
- * Created by Abi on 12/3/17.
- */
+
 public class Application {
 
     public static void main(String[] args) {
@@ -14,14 +12,13 @@ public class Application {
 
         GraphGenerator.populateGraph();
 
-
         Population pop = new Population(populationSize, true, NumberOfColors);
 
         System.out.println("Current fittest color set : ");
         System.out.println(pop.getFittest().toString() + "fitness : " + pop.getFittest().getFitness());
         pop.getFittest().displayWrongColor();
 
-        /**
+        /*
          * Breed up to required generations
          */
 
@@ -31,10 +28,12 @@ public class Application {
 
         System.out.println(String.format("After %d breed the fittest color set is : ", generations));
         System.out.println(pop.getFittest().toString() + "fitness : " + pop.getFittest().getFitness());
-        System.out.println("Adjacent color below this line if any");
+        System.out.println("Adjacent node containing similar color below this line if any");
         pop.getFittest().displayWrongColor();
 
     }
+
+
 
 
 }
