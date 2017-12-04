@@ -19,7 +19,7 @@ public class GraphGenerator {
     static int[] SecondRow = {1, 0, 1, 0, 0, 0, 1, 0, 0, 0};
     static int[] thirdRow = {0, 1, 0, 1, 0, 0, 0, 1, 0, 0};
     static int[] fourthRow = {0, 0, 1, 0, 1, 0, 0, 0, 1, 0};
-    static int[] fifthRow = {0, 0, 0, 1, 0, 0, 0, 0, 0, 1};
+    static int[] fifthRow = {1, 0, 0, 1, 0, 0, 0, 0, 0, 1};
     static int[] sixthRow = {1, 0, 0, 0, 0, 0, 0, 1, 1, 0};
     static int[] seventhRow = {0, 1, 0, 0, 0, 0, 0, 0, 1, 1};
     static int[] eightRow = {0, 0, 1, 0, 0, 1, 0, 0, 0, 1};

@@ -62,9 +62,8 @@ public class ColorSet {
                     count++;
                 }
             }
-
         }
-        count = (count / 2);
+
         return count;
     }
 
