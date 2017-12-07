@@ -1,9 +1,14 @@
-package com.neu.gc;
+package edu.neu.gc;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * Created by Abi on 12/3/17.
  */
 public class GaAlgorithm {
+
+    private static Logger LOGGER = LogManager.getLogger(GaAlgorithm.class.getName());
 
     //GA parameters
     private static final double mutationRate = 0.015;

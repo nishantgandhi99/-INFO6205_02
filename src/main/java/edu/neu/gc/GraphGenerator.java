@@ -1,11 +1,14 @@
-package com.neu.gc;
+package edu.neu.gc;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * Created by Abi on 12/3/17.
  */
 public class GraphGenerator {
 
-
+    private static Logger LOGGER = LogManager.getLogger(GraphGenerator.class.getName());
     /**
      * A graph can be represented in form of adjacency matrix.
      * An undirected graph is required

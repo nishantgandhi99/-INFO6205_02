@@ -1,4 +1,7 @@
-package com.neu.gc;
+package edu.neu.gc;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.Random;
 import java.util.stream.IntStream;
@@ -8,6 +11,8 @@ import java.util.stream.IntStream;
  */
 
 public class ColorSet {
+
+    private static Logger LOGGER = LogManager.getLogger(ColorSet.class.getName());
 
     int[] colorset;
 
@@ -72,7 +77,7 @@ public class ColorSet {
         for (int i = 0; i < graph.length; i++) {
             for (int j = 0; j < graph[i].length; j++) {
                 if (graph[i][j] == 1 && colorset[i] == colorset[j]) {
-                    System.out.println(String.format("Problem with edge coloring : %d \t %d", i, j));
+                    LOGGER.info(String.format("Problem with edge coloring : %d \t %d", i, j));
                 }
             }
         }

@@ -1,10 +1,14 @@
-package com.neu.gc;
+package edu.neu.gc;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * Created by Abi on 12/3/17.
  */
 public class Population {
 
+    private static Logger LOGGER = LogManager.getLogger(Population.class.getName());
     ColorSet[] colorset;
 
     public Population(int populationSize, Boolean flag, int numberOfColor) {
