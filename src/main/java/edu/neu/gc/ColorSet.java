@@ -17,7 +17,7 @@ public class ColorSet {
     int[] colorset;
 
     public ColorSet() {
-        colorset = new int[GraphGenerator.getNode()];
+        colorset = new int[GraphGenerator.getVertexCount()];
 
     }
 
