@@ -8,7 +8,7 @@ public class Application {
 
     private static Logger LOGGER = LogManager.getLogger(Application.class.getName());
 
-    public static void main(String[] args)
+    public static void main(String[] args) throws GraphGenerator.InvalidEdgeCountException
     {
 
         final int generations = 100; //Change the value to adjusted evolution of generations
@@ -16,6 +16,7 @@ public class Application {
         final int NumberOfColors = 3; //Adjust number of colors
 
         //GraphGenerator.populateGraph();
+        GraphGenerator graph = new GraphGenerator(10, 14);
 
         Population pop = new Population(populationSize, true, NumberOfColors);
 
