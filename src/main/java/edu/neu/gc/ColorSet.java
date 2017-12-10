@@ -18,7 +18,6 @@ public class ColorSet {
 
     public ColorSet() {
         colorset = new int[GraphGenerator.getVertexCount()];
-
     }
 
     /**
@@ -51,15 +50,15 @@ public class ColorSet {
      * Get the fitness value of graph based on the colorset
      * <p>
      * returns the count of satisfied edge having different adjacent colors
+     * bigger the result, better the solution fitness.
+     * 0 <= result < edgeCount*2
      */
 
     public int getFitness() {
 
         int count = 0;
 
-
         int[][] graph = GraphGenerator.getGraph();
-
 
         for (int i = 0; i < graph.length; i++) {
             for (int j = 0; j < graph[i].length; j++) {

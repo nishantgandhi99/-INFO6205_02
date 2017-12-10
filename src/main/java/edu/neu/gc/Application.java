@@ -15,7 +15,7 @@ public class Application {
         final int populationSize = 50; //Adjust the population size
         final int NumberOfColors = 3; //Adjust number of colors
 
-        GraphGenerator.populateGraph();
+        //GraphGenerator.populateGraph();
 
         Population pop = new Population(populationSize, true, NumberOfColors);
 

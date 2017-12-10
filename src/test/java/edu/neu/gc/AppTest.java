@@ -6,13 +6,18 @@ import org.junit.rules.ExpectedException;
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test
-    public void randomtest1() {
-        assertEquals("hi", "hi");
-    }
 
     @Test
     public void testFitness() {
+        ColorSet mySet = new ColorSet();
+        assertEquals(mySet.getFitness(), 0);
+    }
+
+    @Test
+    public void testFitness1() throws GraphGenerator.InvalidEdgeCountException {
+        int vertexCount = 7;
+        int edgeCount = 5;
+        GraphGenerator graph = new GraphGenerator(vertexCount, edgeCount);
         ColorSet mySet = new ColorSet();
         assertEquals(mySet.getFitness(), 0);
     }
