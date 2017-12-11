@@ -40,3 +40,20 @@ and adjacencey vertices will receive different color.
 
 ![Screenshot](./screenshots/unittest.png)
 ![Screenshot](./screenshots/apprun.png)
+
+# Implementation Details
+The problem is to decide whether the graph is proper k-colorable given input K.
+Following are the GA implementation approach.
+
+### 1. & 2. Genetic Code & Gene Expression
+Genetic code of a graph is represnted as integer array where array index is vertex id
+and array value is gene(or vertex color). The gene value is bounded by input k for deciding k-colorability.
+
+### 3. Fitness Function
+
+Given the candidate solution-colorset for our graph, fitness function calculates
+number of non-conflicting edges.
+That is among the vertices which are connected with each other,
+how many of them are already proper colored respect to eachother.
+
+    Total Edges = color conflicting Edges + non-color conflicting edges(or fitness function output * 2)
