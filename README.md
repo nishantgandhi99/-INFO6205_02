@@ -35,3 +35,8 @@ and adjacencey vertices will receive different color.
 1. Martin Charles Golumbic and Werner Rheinboldt, *Algorithmic Graph Theory and Perfect Graphs*, ISBN: 978-0-12-289260-8
 2. Melanie Mitchell, *An introduction to Genetic Algorithms*, MIT press
 3. "Genetic Algorithms" https://www.doc.ic.ac.uk/~nd/surprise_96/journal/vol1/hmw/article1.html
+
+# Screenshots
+
+![Screenshot](./screenshots/unittest.png)
+![Screenshot](./screenshots/apprun.png)
