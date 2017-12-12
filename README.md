@@ -1,3 +1,7 @@
+# Team
+• Nishant Gandhi
+• Abhijit Panchakshari
+
 # INFO6205 End Semester Project on Genetic Algorithm
 Genetic Algorithms were invented to mimic some of the processes observed in natural evolution. Many people, biologists included, are astonished that life at the level of complexity that we observe could have evolved in the relatively short time suggested by the fossil record. The idea with GA is to use this power of evolution to solve optimization problems. The father of the original Genetic Algorithm was John Holland who invented it in the early 1970's
 
